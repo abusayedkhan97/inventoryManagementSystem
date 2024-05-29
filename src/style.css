@@ -1,0 +1,518 @@
+body {
+  background-color: #eeeeee;
+}
+
+.skcontainer {
+  width: 645px;
+  margin: 10px auto;
+  border-left: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.result_search_header {
+  display: flex;
+}
+
+.result_search_header .logo {
+  background-color: #eeeeee;
+  padding: 15px 25px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.banner {
+  color: white;
+}
+
+.banner .banner_header {
+  background-color: #007814;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner .banner_header h5 {
+  color: RGB(149, 225, 125);
+  padding-left: 5px;
+  margin: 0px;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: Verdana;
+}
+
+.banner hr {
+  margin: 0px;
+  border-color: rgb(71, 158, 85);
+  opacity: 1;
+}
+
+.banner h4 {
+  background-color: #007814;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: Verdana;
+  padding: 10px 5px;
+  margin: 0px;
+}
+
+.banner .banner_footer {
+  background-image: url(../img/bar_bk.jpg);
+  background-repeat: repeat-x;
+  text-align: right;
+  border-top: 1px solid #fff;
+}
+
+.banner a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.banner a:hover {
+  color: RGB(0, 204, 153);
+}
+
+/* Form Body*/
+
+.result_search_body {
+  width: 77%;
+  margin: 20px auto;
+  border: 2px solid #666;
+  padding: 30px 70px;
+}
+
+.result_search_body .form_row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.result_search_body .form_row label,
+.result_search_body .form_row span {
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+}
+.result_search_body .form_row select,
+.result_search_body .form_row input {
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 3px;
+}
+.result_search_body .form_row span {
+  margin-right: 20px;
+}
+
+.result_search_body .form_row select,
+.result_search_body .form_row input {
+  width: 200px;
+  background-color: #f4f0f2;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+}
+
+/* Button */
+
+.search_form_btn {
+  display: flex;
+  justify-content: end;
+}
+
+.search_form_btn button {
+  font-size: 13.33px;
+  font-weight: 400;
+  background-color: RGB(240, 240, 240);
+  font-family: Arial;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+}
+
+.search_form_btn button:hover {
+  background-color: #e5e5e5;
+}
+
+.search_form_btn #reset {
+  margin-right: 3px;
+}
+
+/* form footer */
+.result_search_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-top: 5px solid #86c775;
+  border-radius: 0px 0px 9px 9px;
+}
+
+.result_search_footer span {
+  font-size: 10px;
+  color: RGB(102, 102, 102);
+  font-weight: 400;
+}
+
+/* result */
+.result_body a {
+  font-size: 11px;
+  font-weight: 700;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #00f;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 0px;
+}
+.result_body a:hover {
+  color: red;
+}
+
+.result table {
+  width: 100%;
+}
+.result_body h3 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  margin: 15px 0px;
+}
+
+.result table tr td {
+  background-color: #eeeeee;
+  border: 1px solid #fff;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  padding: 2px 4px;
+}
+
+.grade table tbody tr:nth-child(even) td {
+  background-color: #dee1e4;
+}
+
+.result table th {
+  background-color: #afb7be;
+  border: 1px solid #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 4px;
+}
+
+/* create */
+
+table tbody img {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+
+table tbody td {
+  vertical-align: middle;
+}
+
+table tbody td button {
+  border: none;
+  border-radius: 4px;
+}
+
+/* model */
+.skmodal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.495);
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.skmodal-content {
+  background: linear-gradient(200deg, rgb(186, 250, 255), rgb(210, 255, 88));
+  padding: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.277);
+  border-radius: 5px;
+  position: relative;
+}
+.modal-close {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  border: none;
+  color: red;
+  font-size: 30px;
+  background-color: transparent;
+  padding: 0px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(-70px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-70px);
+  }
+}
+
+.seeStudent img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.seeStudent :where(h4, h5) {
+  color: gold;
+  line-height: 1.5rem;
+}
+
+.singleContent {
+  margin: auto;
+  text-align: left;
+  padding: 0px 25px;
+  margin-bottom: 10px;
+}
+
+.singleContent img{
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.singleContent h2{
+  font-size: 25px;
+  color: red;
+}
+
+.singleContent p{
+  font-size: 16px;
+  color: #000;
+}
+
+.singleContent p span{
+  border-bottom: 5px double rgb(0, 99, 174);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#seeProduct .modal-dialog-centered{
+  max-width: 50%;
+}
+
+/* order success message */
+.hidden {
+  display: none;
+}
+
+#successMessage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 1000;
+}
+
+#successMessage.show {
+  display: block;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.checkmark-circle {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #4caf50;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.checkmark {
+  width: 40px;
+  height: 20px;
+  border-left: 4px solid white;
+  border-bottom: 4px solid white;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -10px;
+  margin-left: -20px;
+  animation: draw 1s ease-in-out;
+}
+
+@keyframes draw {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  50% {
+    width: 0;
+    height: 20px;
+  }
+  100% {
+    width: 40px;
+    height: 20px;
+  }
+}
+
+/* product */
+
+.product-img {
+  height: 165px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* order */
+.newOrder{
+  background-color: rgb(255, 236, 236);
+}
+
+.confirmOrder{
+  padding: 0px 5px;
+  margin: 0px 5px;
+  background-color: #ffffff;
+  color: #009007;
+  font-weight: bold;
+}
+
+.total-order{
+  font-size: 40px;
+  color: rgb(35, 0, 175);
+  font-weight: bold;
+}
+
+.new-order{
+  font-size: 40px;
+  color: red;
+  font-weight: bold;
+}
+
+.completed-order{
+  font-size: 40px;
+  color: rgb(0, 134, 16);
+  font-weight: bold;
+}
+
+/* dashbord heading*/
+
+.dashbord{
+  margin: 20px 0px;
+  text-align: center;
+  font-family: cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-size: 60px;
+}
+
+/* shop button */
+
+.shopBtn{
+  text-align: end;
+}
+
+.shopBtn a{
+  text-decoration: none;
+  background-color: gold;
+  color: rgb(10, 0, 61);
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* new Order */
+
+#newOrderModal .modal-dialog.modal-dialog-centered {
+  max-width: 75%;
+}
+
+#newOrderModal .modal-dialog.modal-dialog-centered table.dataTable{
+  text-align: left;
+}
+
+#newOrderModal table.dataTable thead th,#newOrderModal table.dataTable thead td {
+  padding: 10px 10px;
+}
+
+#newOrderModal table td, #newOrderModal table.dataTable thead th{
+  text-wrap: nowrap;
+}
+
+/* complete Order */
+
+#completedModal .modal-dialog.modal-dialog-centered {
+  max-width: 75%;
+}
+
+#completedModal .modal-dialog.modal-dialog-centered table.dataTable{
+  text-align: left;
+}
+
+#completedModal table.dataTable thead th,#completedModal table.dataTable thead td {
+  padding: 10px 10px;
+}
+
+#completedModal table td, #completedModal table.dataTable thead th{
+  text-wrap: nowrap;
+}
+
+/* product Page Stock */
+
+.productStock{
+  border: none;
+  color: #005675;
+  font-weight: bold;
+}
+
+
+/* dataNotFound */
+
+#dataNotFound{
+  font-size: 50px;
+  margin-top: 30px;
+  color: red;
+  font-weight: 900;
+  text-shadow: 3px 4px 5px #a0a0a0;
+}
